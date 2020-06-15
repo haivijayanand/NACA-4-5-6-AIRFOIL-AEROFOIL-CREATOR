@@ -1,0 +1,9 @@
+&NACA
+name = 'NACA 9412'
+profile = '4'
+toc = 0.12 
+camber  = '2'
+cmax=0.09
+xmaxc=0.4
+dencode=3
+/

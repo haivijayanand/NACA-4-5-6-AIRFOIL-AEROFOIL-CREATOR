@@ -1,0 +1,17 @@
+Compilation Instructions for Windows 64 bit Machine
+- K Vijay Anand, haivijayanand@gmail.com
+
+1. Install MinGW x64 on your pc
+2. click mingw-w64.bat to set environmental variables
+
+3. To create a platform independant ( run on any laptop,workstation with windows installed),
+first create a object file with -Wall -c -g flags
+
+gfortran -Wall -c -g naca456.f90 -o naca456.obj
+
+4. Then create the executable by linking the object file with -static and libraray files of fortran c and c++
+
+gfortran -static -static-libgfortran -static-libgcc -static-libstdc++ -o naca456.exe naca456.obj
+
+Thats it! Enjoy
+
